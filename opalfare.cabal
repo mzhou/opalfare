@@ -1,0 +1,23 @@
+name:                opalfare
+version:             0.1.0
+license:             OtherLicense
+license-file:        LICENSE
+author:              Michael Zhou
+maintainer:          mzhou@cse.unsw.edu.au
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Opal.Fare,
+                       Opal.Fare.Train,
+                       Opal.Fare.Units
+  build-depends:       base >=4.6,
+                       opaldist >=0.1
+
+executable opalfare
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  build-depends:       base >=4.6,
+                       opaldist >=0.1
+
